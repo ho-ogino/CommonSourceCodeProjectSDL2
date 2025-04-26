@@ -1,6 +1,6 @@
 # Common Source Code Project SDL2版
 
-このプロジェクトは、TAKEDA, toshiyaさんの「Common Source Code Project」をSDL2環境で動作するように移植したものです。
+このプロジェクトは、TAKEDA, toshiyaさんの「Common Source Code Project」をSDL2環境で動作するようにしたものです。
 
 ## 概要
 
@@ -9,6 +9,14 @@
 - 全体的に実装途中の実験的プロジェクトであり、動作が不安定な場合があります
 
 ## ビルド方法
+
+本プロジェクトはパッチにより提供されますので、本体ソースのダウンロードとパッチ適用を下記のスクリプトで行ってください(Mac / Linuxのみ)
+
+```bash
+setup.sh
+```
+
+パッチ適用後、ビルドを行ってください。
 
 ```bash
 make
@@ -31,4 +39,7 @@ MakefileにはSHARP X1に必要なソースが記述され、-D_X1 という定�
 
 このプロジェクトは GNU General Public License Version 2 (GPLv2) の下で公開されています。詳細は [license/COPYING.txt](license/COPYING.txt) をご覧ください。
 
-原作者のCommon Source Code Projectに関する著作権は、TAKEDA, toshiyaさんに帰属します。 
+原作者のCommon Source Code Projectに関する著作権は、TAKEDA, toshiyaさんに帰属します。
+
+## 免責事項
+このリポジトリは元のプロジェクトに対するパッチを提供するものであり、元プロジェクトのライセンスや法的問題については一切の責任を負いません。このパッチの適用によって生じるいかなる問題についても、利用者自身の責任において対応してください。
