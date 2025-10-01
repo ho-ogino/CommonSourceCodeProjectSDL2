@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SOURCE_URL="http://takeda-toshiya.my.coocan.jp/common/source.7z"
+SOURCE_URL="http://takeda-toshiya.my.coocan.jp/common/history/2025-04-28.7z"
 SOURCE_FILE="source.7z"
 
 echo "==================================================================="
@@ -36,6 +36,7 @@ if [ $? -ne 0 ]; then
     echo "アーカイブの展開に失敗しました"
     exit 1
 fi
+mv ./orig/2025-04-28 ./orig/source
 
 cp -r ./orig/source/src src
 cd src
